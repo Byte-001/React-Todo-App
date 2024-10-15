@@ -1,13 +1,23 @@
-import React from 'react'
-import './App.css'
+import "./css/todo.css";
+import React, { useState } from "react";
+import TodoCreate from "./components/TodoCreate";
+import TodoList from "./components/TodoList";
 
-function App() {
+export default function App() {
+  const [todos, setTodos] = useState([]);
 
-return (
-    <>
-     <p className='font-bold'>Arda</p>
-    </>
-  )
+  const createTodo = (newTodo) => {
+    setTodos([...todos, newTodo]);    
+  }
+  
+  // console.log(todos);
+
+  return (
+    <div className="App">
+      <div className="main">
+        <TodoCreate onCreateTodo={createTodo}/>
+        <TodoList todos={todos}/>
+      </div>
+    </div>
+  );
 }
-
-export default App
