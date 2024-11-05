@@ -59,3 +59,43 @@ body{
     font-size: 14px;
     font-weight: 600;
 }
+
+.tasks__container{
+    width: 100%;
+    max-width: 736px;
+    height: 451px;
+    margin: 0 auto;
+    margin-top: 90px !important;
+    padding: 0 1rem;
+}
+
+.tasks__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+    height: 19px;
+}
+
+.created__title{
+    color: #4EA8DE;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.completed__title{
+    color: #8284FA;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.span__number {
+    background-color: #333333;
+    color: #D9D9D9;
+    padding: 2px 8px;
+    border: none;
+    border-radius: 62rem;
+    font-size: 14px;
+    font-weight: 700;
+}
