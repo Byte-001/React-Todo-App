@@ -1,4 +1,5 @@
 import "../App.css";
+import Task from "./Task.jsx";
 
 function Tasks(){
     return (
@@ -7,7 +8,11 @@ function Tasks(){
                 <h3 className={"created__title"}>Created Tasks <span className={"span__number"}>5</span></h3>
                 <h3 className={"completed__title"}>Completed <span className={"span__number"}>2 of 5</span></h3>
             </div>
+            <div className={"task__list"}>
+                <Task/>
+            </div>
         </div>
+
     )
 }
 export default Tasks;
