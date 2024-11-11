@@ -99,3 +99,56 @@ body{
     font-size: 14px;
     font-weight: 700;
 }
+.task__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.task{
+    width: 100%;
+    padding: 16px;
+    gap: 12px;
+    border: 1px #333333;
+    border-radius: 8px;
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.check__container{
+    width: 17px;
+    height: 17px;
+    background: none;
+    border: none;
+}
+
+.task .task__text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-right: auto;
+    max-width: calc(100% - 60px);
+    overflow-wrap: break-word;
+}
+
+.check__container div{
+    width: 17px;
+    height: 17px;
+    border: 1px solid #4EA8DE;
+    border-radius: 8px;
+}
+
+
+.delete__button{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: none;
+    border: none;
+    color: #808080;
+    flex-shrink: 0;
+}
