@@ -29,10 +29,14 @@ function App() {
      setTasks(newTasks);
   }
 
+  const deleteTask = (taskID) => {
+      setTasks(tasks.filter((task) => task.id !== taskID));
+  }
+
   return (
     <>
       <Header onAddTask={addTask} />
-      <Tasks tasks={tasks} onComplete={toggleComplete}/>
+      <Tasks tasks={tasks} onComplete={toggleComplete} onDelete={deleteTask}/>
     </>
   );
 }
