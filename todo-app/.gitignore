@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.git_toolbox_blame.xml
+*.vcs.xml
+*.workspcae.xml
+*.git_toolbox_prj_xml
+*.Project_Default.xml
