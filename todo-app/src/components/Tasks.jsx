@@ -1,7 +1,7 @@
 import "../App.css";
 import Task from "./Task.jsx";
 
-function Tasks({ tasks, onComplete}) {
+function Tasks({ tasks, onComplete, onDelete}) {
   const taskQuantity = Object.values(tasks).length; 
   const completedTasks = Object.values(tasks).filter(task => task.completed).length;  
   
@@ -22,6 +22,7 @@ function Tasks({ tasks, onComplete}) {
               key={task.id}
               task={task}
               onComplete={onComplete}
+              onDelete={onDelete}
             />
           );
         })}
