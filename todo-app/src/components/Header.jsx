@@ -1,5 +1,5 @@
 import "../App.css";
-import logo from "../public/Logo.svg";
+import logo from "../public/todo.svg";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { useState } from "react";
 
